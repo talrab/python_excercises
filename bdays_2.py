@@ -1,7 +1,7 @@
 
 import json
 
-with open("Bdays.json",'r') as f:
+with open("Bdays_2.json",'r') as f:
     bdays_dictionary = json.load(f)
 
 print('Welcome to the birthday dictionary. We know the birthdays of:\n')
@@ -23,7 +23,7 @@ while (True):
         new_name = input("Please enter a name:\n")
         new_date = input("Please enter a birthday date:\n")
         bdays_dictionary[new_name]=new_date
-        with open("Bdays.json",'w') as f:
+        with open("Bdays_2.json",'w') as f:
             json.dump(bdays_dictionary,f)
     else:
         print ("Please enter either '1' or '2'")
